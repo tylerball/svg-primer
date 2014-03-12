@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg id="svg-icon" width="100%" height="100%" viewBox="0 0 300 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">    
+    <defs>
+        <style>
+
+            @media screen and (max-width: 300px) {
+                #door-shadow, #tube-shadow, .backyard {
+                    display: none;
+                }
+
+                #door-body {
+                    fill: white;
+                }
+
+                #door-handle {
+                    fill: #E55C3C;
+                }
+
+                #door-body, #door-handle {
+                    -ms-transform: translate(0,0);
+                    -webkit-transform: translate(0,0);
+                    transform: translate(0,0);
+                }
+
+                #window {
+                    -ms-transform: translate(0,0) scale(1);
+                    -webkit-transform: translate(0,0) scale(1);
+                    transform: translate(0,0) scale(1);
+                }
+
+                #house-body {
+                    -ms-transform: scaleX(1.18) translate(0, 0);    
+                    -webkit-transform: scaleX(1.18) translate(0, 0);    
+                    transform: scaleX(1.18) translate(0, 0);    
+                }
+
+                #tube-body {
+                    -ms-transform: translate(0, 0);
+                    -webkit-transform: translate(0, 0);
+                    transform: translate(0, 0);
+                }
+
+                #tube-upper {
+                    -ms-transform: translate(0, 0);
+                    -webkit-transform: translate(0, 0);
+                    transform: translate(0, 0);
+                }
+
+                #house-roof {
+                    -ms-transform: scaleX(1.18);
+                    -webkit-transform: scaleX(1.18);
+                    transform: scaleX(1.18);
+                }
+
+                #window, #window-upper, #door-body, #door-th, #door-handle {
+                    -ms-transform: translateX(25px);
+                    -webkit-transform: translateX(25px);
+                    transform: translateX(25px);
+                }
+            }
+
+            /* cannot hide #window because #window2 will disappear as well */
+            @media screen and (max-width: 240px) {
+                #window-upper, #window2, #door-th {
+                    display: none;
+                }
+
+                #house-roof, #house-body {
+                    fill: #E55C3C;
+                }
+
+                #door-body, #door-handle {
+                    -ms-transform: translate(-60px, -53px) scale(1.4);
+                    -webkit-transform: translate(-60px, -53px) scale(1.4);
+                    transform: translate(-60px, -53px) scale(1.4);
+                }
+
+                #window {
+                    -ms-transform: translate(130px, -70px) scale(1.5);
+                    -webkit-transform: translate(130px, -70px) scale(1.5);
+                    transform: translate(130px, -70px) scale(1.5);
+                }
+
+                #house-body {
+                    -ms-transform: scale(1.18, 1.3) translateY(-20px);
+                    -webkit-transform: scale(1.18, 1.3) translateY(-20px);
+                    transform: scale(1.18, 1.3) translateY(-20px);
+                }
+
+                #tube-body {
+                    -ms-transform: translate(0, 10px);
+                    -webkit-transform: translate(0, 10px);
+                    transform: translate(0, 10px);
+                }
+
+                #tube-upper {
+                    -ms-transform: translate(0, -8px);
+                    -webkit-transform: translate(0, -8px);
+                    transform: translate(0, -8px);
+                }
+
+                #icon {
+                    -ms-transform: scale(1);
+                    -webkit-transform: scale(1);
+                    transform: scale(1);
+                }
+            }
+
+            @media screen and (max-width: 200px) {
+                .window-th, #door-handle {
+                    display: none;
+                }
+
+                #tube-body {
+                    -ms-transform: translate(0, 0);
+                    -webkit-transform: translate(0, 0px);
+                    transform: translate(0, 0);
+                }
+
+                #window-item-main {
+                    -ms-transform: scale(1) translate(0,0);  
+                    -webkit-transform: scale(1) translate(0,0);  
+                    transform: scale(1) translate(0,0);  
+                }
+
+            }
+
+            @media screen and (max-width: 180px) {
+                #tube-upper, .window-item {
+                    display: none;
+                }
+
+    
+                #window-item-main {
+                    -ms-transform: scale(2.5) translate(-20px, -105px);
+                    -webkit-transform: scale(2.5) translate(-20px, -105px);
+                    transform: scale(2.5) translate(-20px, -105px);
+                }
+
+            }
+
+            @media screen and (max-width: 150px) {
+                #window-item-main {
+                    display: none;
+                }
+
+                #door-body {
+                    -ms-transform: translate(-50px, -90px) scaleX(1.6) scaleY(1.5);
+                    -webkit-transform: translate(-50px, -90px) scaleX(1.6) scaleY(1.5);
+                    transform: translate(-50px, -90px) scaleX(1.6) scaleY(1.5);
+                }
+
+            }
+
+            @media screen and (max-width: 100px) {
+                #tube-body {
+                    display: none;
+                }
+
+            }
+
+
+            @media screen and (max-width: 44px) {
+                #door-body {
+                    display: none;
+                }
+                
+                #house-body {
+                    -ms-transform: translate(35px, -50px) scaleX(0.9) scaleY(1.4);
+                    -webkit-transform: translate(35px, -50px) scaleX(0.9) scaleY(1.4);
+                    transform: translate(35px, -50px) scaleX(0.9) scaleY(1.4);
+                }
+            }
+
+        </style>
+        <script>
+
+           console.log(document.getElementById('svg-icon')); 
+        </script>
+    </defs>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+       
+        <g id="icon" class="icon">
+            
+                <g class="backyard">
+                    <rect id="backyard" d="M224.059,97.927 L224.059,244.5 L287.5,244.5 L287.5,97.927 L224.059,97.927 Z M224.059,97.927" fill="#E55C3C" x="224.059" y="97.927" width="63.441" height="146.573"></rect>
+                    <path id="backyard-roof" d="M165.5,42.5 L255.369,42.5 L299.798,105.5 L165.5,105.5 L165.5,42.5" fill="#B8492E"></path>
+                </g>
+                
+                <rect id="tube-body" x="42" y="29" width="34" height="70" fill="#E55C3C" />
+                <rect id="tube-upper" x="37" y="29" width="44" height="12" fill="#E55C3C" />
+                <path id="tube-shadow" d="M76,42.5 L75.279,54.206 L42,87.997 L42,76.333 L76,42.5 Z M75,42" fill="#B8492E"></path>
+                
+                    
+                <path id="house-roof" fill="#E98158" d="M127,1L0,128L252,128" />
+                <rect id="house-body" x="17" y="127" width="219" height="137"  fill="#E98158" />
+                
+
+                <g id="window-upper">
+                    <rect x="108" y="98" width="15" height="19" fill="white" />
+                    <rect x="129" y="98" width="15" height="19" fill="white" />
+                    <ellipse cx="126" cy="92" rx="18" ry="23" fill="white" />
+                    <rect x="108" y="93" width="36" height="6" fill="#E98158" />
+                    <rect x="123" y="68" width="6" height="52" fill="#E98158" />
+                </g>
+
+
+                <g id="window">
+                    <rect id="window-item-main" x="36" y="170" width="17" height="17" fill="white" />
+                    <rect class="window-item" x="58" y="170" width="17" height="17" fill="white" />
+                    <rect class="window-item" x="36" y="192" width="17" height="17" fill="white" />
+                    <rect class="window-item" x="58" y="192" width="17" height="17" fill="white" />
+                    <rect class="window-th" x="30" y="213" width="50" height="5" fill="white" />
+                </g>
+                <use id="window2" xlink:href="#window" x="142" y="0" />
+
+                <rect id="door-body" x="101" y="188" width="49" height="76"  fill="#E55C3C" />
+                <rect id="door-th" x="95" y="258" width="62" height="6" fill="white" />
+                <circle id="door-handle" cx="116" cy="225" r="3" fill="white" />
+                <path id="door-shadow" d="M142.5,258.5 L142.5,194.5 L101.5,194.5 L101.5,188.5 L149.5,188.5 L149.5,258 L142.5,258 Z M142.5,258.5" fill="#B8492E"></path>
+            
+        </g>
+
+    </g>
+</svg>

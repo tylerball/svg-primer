@@ -1,0 +1,225 @@
+/**
+ * A simple theme for reveal.js presentations, similar
+ * to the default theme. The accent color is darkblue.
+ *
+ * This theme is Copyright (C) 2012 Owen Versteeg, https://github.com/StereotypicalApps. It is MIT licensed.
+ * reveal.js is Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+
+// Include theme-specific fonts
+@import url(https://fonts.googleapis.com/css?family=News+Cycle:400,700);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+
+$orange-bright: #DC6A23;
+$orange-mid: #914613;
+$orange-dark: #560709;
+
+$color_blue: #6ec1dc;
+
+// Override theme settings (see ../template/settings.scss)
+$mainFont: 'Helvetica Neue', Helvetica, Arial sans-serif;
+$mainColor: $orange-dark;
+$headingFont: $mainFont;
+$headingColor: $orange-dark;
+$headingTextShadow: none;
+$headingTextTransform: none;
+$headingLetterSpacing: -1px;
+$headingWeight: bold;
+$heading1TextShadow: none;
+$backgroundColor: #fff;
+$linkColor: $orange-bright;
+$linkColorHover: lighten( $linkColor, 20% );
+$selectionBackgroundColor: transparentize($linkColor, 0.3);
+
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+.reveal {
+  h1 {
+    font-size: 3em;
+  }
+
+  h3 {
+    margin-bottom: 1em;
+  }
+
+  td, th {
+    text-align: center !important;
+    vertical-align: middle;
+  }
+
+  th {
+    font-size: 0.8em;
+  }
+}
+
+b {
+  color: $orange-mid;
+}
+
+c {
+  color: $orange-bright;
+}
+
+p {
+  code {
+    display: inline-block;
+    box-shadow: 0.05em 0.05em 0.1em transparentize($orange-dark, 0.8);
+  }
+}
+
+.source {
+  position: absolute;
+  bottom: -10em;
+  right: 0;
+  font-size: 0.6em !important;
+  color: lighten($orange-bright, 20%);
+}
+
+.half {
+  width: 50%;
+  float: left;
+
+  p {
+    text-align: left;
+  }
+}
+
+.svg-code {
+
+  pre {
+    padding: 0.5em;
+    white-space: pre-wrap;
+    font-family: monospace;
+    color: #ffffff;
+    background-color: #1c1c1c;
+    font-size: 0.4em !Important;
+  }
+
+  .highlight {
+    color: #000;
+    background: red;
+  }
+
+  .String { color: #ffe779; }
+  .Function { color: #93ebff; }
+  .Identifier { color: #00d2ff; }
+  .LineNr { color: #6b7679; background-color: #1c1c1c; padding-bottom: 1px; }
+  .Statement { color: #5c8ef7; font-weight: bold; }
+  .Comment { color: #6b7679; }
+  .Type { color: #ff7b7b; }
+}
+
+.first-slide {
+  min-height: 75%;
+
+  h1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: $orange-dark;
+  }
+
+  h3 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: $orange-dark;
+  }
+}
+
+.compatibility {
+  table {
+    width: 100%;
+  }
+
+  th {
+    padding: 1em 0;
+  }
+}
+
+.slide-icons {
+  div {
+    float: left;
+  }
+
+  p {
+    clear: left;
+  }
+}
+
+.venn {
+  width: 990px;
+  height: 600px;
+
+  circle {
+    fill: none;
+    stroke: $color_blue;
+    stroke-width: 2px;
+  }
+
+  .circle {
+    opacity: 0;
+    transition: opacity 2s;
+
+    circle {
+      transition: transform 2.5s ease-in-out;
+    }
+  }
+
+  .circle1 circle {
+    transform: translate(-300px, -400px);
+  }
+
+  .circle2 circle {
+    transform: translate(300px, -400px);
+  }
+
+  .circle3 circle {
+    transform: translate(0px, 400px);
+  }
+
+  .in-view & .circle {
+    transition-delay: 1s;
+    opacity: 1;
+
+    circle {
+      transform: translate(0px, 0px);
+    }
+  }
+
+  .difference {
+    opacity: 0;
+    transition: opacity 2s;
+
+    .in-view & {
+      transition-delay: 3s;
+      opacity: 1;
+    }
+
+    path {
+      fill: #fff;
+    }
+  }
+}
+
+.anchorman path {
+  fill: none;
+}
+
+.anchorman g {
+  fill: none;
+  stroke: #7ad185;
+  stroke-width: 2px;
+}
