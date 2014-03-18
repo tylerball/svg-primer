@@ -499,7 +499,7 @@ animation-fill-mode: forwards;
 <section>
   <h3>Gradients</h3>
 
-  <svg class="css-2" width="400" height="200">
+  <svg class="css-2" width="300" height="200">
     <circle fill="red" r="50" cx="50" cy="100" />
     <polygon points="175,150 225,50 275,150"/>
 
@@ -535,8 +535,143 @@ animation-fill-mode: forwards;
 </section>
 
 <section>
-  <h1>THE END</h1>
-  <h3>BY Hakim El Hattab / hakim.se</h3>
+  <p>Some more advanced and practical CSS examples:</p>
+
+  <ul>
+    <li><a href="http://webdesign.tutsplus.com/articles/manipulating-svg-icons-with-simple-css--webdesign-15694">Manipulating SVG Icons With Simple CSS</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_started/SVG_and_CSS">MDN: SVG and CSS</a></li>
+  </ul>
+</section>
+
+<section>
+  <h2>Animations</h2>
+</section>
+
+<section data-state="in-view">
+  <h3>With CSS</h3>
+
+  <svg id="Venn" class="venn" x="0px" y="0px" viewBox="0 0 990 600" enable-background="new 0 0 990 600">
+  <g class="difference">
+    <path fill="none" d="M447.747,236.552c0,0,2.509,22.174,15.048,46.228s32.455,42.598,32.455,42.598s18.503-16.011,30.627-39.944
+        s16.826-48.586,16.826-48.586s-16.702-7.282-47.535-7.148S447.747,236.552,447.747,236.552z"/>
+  </g>
+  <g class="circle circle1">
+    <circle fill="none" cx="385.75" cy="209.75" r="159.25"/>
+  </g>
+  <g class="circle circle2">
+    <circle fill="none" cx="604.75" cy="209.75" r="159.25"/>
+  </g>
+  <g class="circle circle3">
+    <circle fill="none" cx="494.75" cy="388.75" r="159.25"/>
+  </g>
+</svg>
+
+</section>
+
+<section>
+  <pre><code>circle {
+  fill: none;
+  stroke: $color_blue;
+  stroke-width: 2px;
+  opacity: 0;
+  transition: opacity 2s, transform 2.5s ease-in-out;
+
+  /* each circle has its own translate position off-screen */
+  transform: translate(-300px, -400px);
+}
+
+.in-view circle {
+  transform: translate(0px, 0px);
+}</code></pre>
+</section>
+
+<section class="js" data-state="in-view">
+  <h3>Animating with Javascript</h3>
+
+  <svg x="0px" y="0px" width="280px" height="350px" viewBox="0 0 276 282" class="anchorman">
+<g>
+<path d="M54.044,225.208c0,0-21.826-24.46-23.707-24.46
+c-1.882,0-3.01,0.376-4.516-1.129c-1.505-1.505-12.418-12.042-12.418-12.042s-2.634-6.397-3.387-10.913
+C9.263,172.149,5.5,164.246,5.5,163.117c0-1.129,4.139-12.794,4.139-12.794s-3.01-12.418-3.01-33.115s-3.763-17.686,9.408-34.996
+s33.868-44.028,34.62-49.296c0.753-5.268,50.425-28.223,66.983-28.223s51.178,5.268,53.812,5.268c2.634,0,13.171,6.774,25.965,8.279
+c13.547,4.892,57.199,41.77,59.08,65.854c1.882,24.084,8.655,28.976,9.031,31.233c0.376,2.258,10.913,39.136,2.258,53.436
+c-8.655,14.3-4.139,17.31-7.902,23.707s-6.774,13.923-9.408,15.805c-2.634,1.882-4.892,13.547-6.397,15.429
+s-9.408,6.021-9.408,6.021s1.882-13.171,1.505-15.429c-0.376-2.258-4.892-27.47-1.129-34.996
+c-0.376-7.526-0.376-12.794-2.258-19.192c-0.376-9.031-2.258-47.415-2.258-52.683s-7.526-28.976-23.331-37.631
+c-3.01,0.376-7.526,1.129-15.052,0.753c-7.526-0.376-29.728,0.753-38.383,0.753s-23.331,1.129-26.718,2.634
+c-3.387,1.505-3.01,4.892-10.913,5.268c-7.902,0.376-31.233,2.258-34.244,2.258S70.601,82.588,66.085,97.64
+s-7.15,30.105-6.021,38.383s0,22.202-4.139,28.599s-4.516,22.955-2.258,31.233C55.925,204.135,61.946,215.8,54.044,225.208z" fill="#560709">
+<animate id="anchor1" attributeName="stroke-dashoffset" from="0" to="0" begin="indefinite" dur="3s" fill="freeze" keySplines="0 0.5 0.5 1" calcMode="spline" />
+</path>
+<path d="M139.183,246.704
+c3.706,2.321,8.561,2.634,11.948,0.612c3.387-2.023,8.655,1.223,8.655,1.223s16.557,9.031,21.355,12.042
+c4.798,3.01,7.338,5.127,8.279,11.76c0.941,6.632-6.397,3.293-6.397,3.293s-21.12-7.056-24.037-7.808
+c-2.916-0.753-8.091-1.223-8.091-1.223s-1.505,3.293-3.34,3.293c-1.834,0-3.81,0-6.962,0s-3.01-2.164-5.645-4.045
+c-3.01,0-30.481,9.408-34.62,11.289c-4.139,1.882-5.645-3.01-5.645-5.645c0-2.634,3.01-7.15,7.15-9.408l15.758-7.761
+C117.592,254.325,134.15,243.553,139.183,246.704z" fill="#560709">
+<animate id="anchor2" attributeName="stroke-dashoffset" from="0" to="0" begin="indefinite" dur="3s" fill="freeze" keySplines="0 0.5 0.5 1" calcMode="spline" />
+</path>
+</g>
+</svg>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script>
+    var $anchorman = $('.js .anchorman');
+    var $paths = $anchorman.find('path');
+
+    $paths.each( function(i, o) {
+      var $path = $(o);
+      length = this.getTotalLength().toString()
+
+      $path
+        .attr('stroke-dasharray', length + ' ' + length)
+        .attr('stroke-dashoffset', length)
+
+      $(document.getElementById('anchor' + (i + 1)) )
+        .attr('from', length)
+        .attr('values', length + ';0')
+    });
+  </script>
+</section>
+
+<section>
+
+  <pre><code>
+  var $anchorman = $('.js .anchorman');
+  var $paths = $anchorman.find('path');
+
+  $paths.each( function(i, o) {
+    var $path = $(o);
+    length = this.getTotalLength().toString()
+
+    $path
+      .attr('stroke-dasharray', length + ' ' + length)
+      .attr('stroke-dashoffset', length)
+
+    $(document.getElementById('anchor' + (i + 1)) )
+      .attr('from', length)
+      .attr('values', length + ';0')
+  });
+
+  var animate = function() {
+    document.getElementById('anchor1').beginElement()
+    document.getElementById('anchor2').beginElement()
+  };</code></pre>
+</section>
+
+<section>
+  <h3>Getting more advanced</h3>
+
+  <p>If you're working with data, check out <a href="http://d3js.org/">D3.js</a>, a javascript library for working with data that uses SVG for graphs, maps, diagrams.</p>
+</section>
+
+<section>
+  <h3>Thanks</h3>
+
+  <p><a href="http://tylerball.github.io/svg-primer">http://tylerball.github.io/svg-primer</a></p>
+
+  <p><a href="http://github.com/tylerball/svg-primer">http://github.com/tylerball/svg-primer</a></p>
 </section>
 
       </div>
@@ -571,6 +706,10 @@ animation-fill-mode: forwards;
         ]
       });
 
+      Reveal.addEventListener( 'in-view', function() {
+        document.getElementById('anchor1').beginElement()
+        document.getElementById('anchor2').beginElement()
+      });
     </script>
 
     

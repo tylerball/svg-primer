@@ -22,6 +22,8 @@ $orange-bright: #DC6A23;
 $orange-mid: #914613;
 $orange-dark: #560709;
 
+$color_blue: #6ec1dc;
+
 // Override theme settings (see ../template/settings.scss)
 $mainFont: 'Helvetica Neue', Helvetica, Arial sans-serif;
 $mainColor: $orange-dark;
@@ -155,4 +157,69 @@ p {
   p {
     clear: left;
   }
+}
+
+.venn {
+  width: 990px;
+  height: 600px;
+
+  circle {
+    fill: none;
+    stroke: $color_blue;
+    stroke-width: 2px;
+  }
+
+  .circle {
+    opacity: 0;
+    transition: opacity 2s;
+
+    circle {
+      transition: transform 2.5s ease-in-out;
+    }
+  }
+
+  .circle1 circle {
+    transform: translate(-300px, -400px);
+  }
+
+  .circle2 circle {
+    transform: translate(300px, -400px);
+  }
+
+  .circle3 circle {
+    transform: translate(0px, 400px);
+  }
+
+  .in-view & .circle {
+    transition-delay: 1s;
+    opacity: 1;
+
+    circle {
+      transform: translate(0px, 0px);
+    }
+  }
+
+  .difference {
+    opacity: 0;
+    transition: opacity 2s;
+
+    .in-view & {
+      transition-delay: 3s;
+      opacity: 1;
+    }
+
+    path {
+      fill: #fff;
+    }
+  }
+}
+
+.anchorman path {
+  fill: none;
+}
+
+.anchorman g {
+  fill: none;
+  stroke: #7ad185;
+  stroke-width: 2px;
 }
