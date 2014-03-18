@@ -1,0 +1,581 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>svg: a primer</title>
+
+    <meta name="description" content="A primer on SVG for designers and developers from Illustrator to HTML.">
+    <meta name="author" content="Tyler Ball">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="css/reveal.min.css">
+    <link rel="stylesheet" href="css/theme/svg.css" id="theme">
+
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+    <script>
+      if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+      }
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="reveal">
+
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+      
+<section class="first-slide">
+  <h1>svg<b>:</b> <c>a primer</c></h1>
+  <h3>tyler ball <b>&mdash;</b> <c>shopify</c></h3>
+</section>
+
+<section>
+  <h2>
+    S<c>calable</c> V<c>ector</c> G<c>raphics</c>
+  </h2>
+</section>
+
+<section>
+  <h2>What is it?</h2>
+  <ul>
+    <li>Vector image format based on XML (like HTML). Everything is tags.</li>
+    <li>Work began in 1998 after Microsoft, Sun and Adobe proposed vector graphics standards</li>
+  </ul>
+  <aside class="notes">
+    Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+  </aside>
+</section>
+
+<section>
+  <h2>Why should I use it?</h2>
+</section>
+
+<section>
+  <svg x="0px" y="0px" width="280px" height="350px" viewBox="0 0 276 282" class="anchorman">
+<g>
+<path d="M54.044,225.208c0,0-21.826-24.46-23.707-24.46
+c-1.882,0-3.01,0.376-4.516-1.129c-1.505-1.505-12.418-12.042-12.418-12.042s-2.634-6.397-3.387-10.913
+C9.263,172.149,5.5,164.246,5.5,163.117c0-1.129,4.139-12.794,4.139-12.794s-3.01-12.418-3.01-33.115s-3.763-17.686,9.408-34.996
+s33.868-44.028,34.62-49.296c0.753-5.268,50.425-28.223,66.983-28.223s51.178,5.268,53.812,5.268c2.634,0,13.171,6.774,25.965,8.279
+c13.547,4.892,57.199,41.77,59.08,65.854c1.882,24.084,8.655,28.976,9.031,31.233c0.376,2.258,10.913,39.136,2.258,53.436
+c-8.655,14.3-4.139,17.31-7.902,23.707s-6.774,13.923-9.408,15.805c-2.634,1.882-4.892,13.547-6.397,15.429
+s-9.408,6.021-9.408,6.021s1.882-13.171,1.505-15.429c-0.376-2.258-4.892-27.47-1.129-34.996
+c-0.376-7.526-0.376-12.794-2.258-19.192c-0.376-9.031-2.258-47.415-2.258-52.683s-7.526-28.976-23.331-37.631
+c-3.01,0.376-7.526,1.129-15.052,0.753c-7.526-0.376-29.728,0.753-38.383,0.753s-23.331,1.129-26.718,2.634
+c-3.387,1.505-3.01,4.892-10.913,5.268c-7.902,0.376-31.233,2.258-34.244,2.258S70.601,82.588,66.085,97.64
+s-7.15,30.105-6.021,38.383s0,22.202-4.139,28.599s-4.516,22.955-2.258,31.233C55.925,204.135,61.946,215.8,54.044,225.208z" fill="#560709">
+<animate id="anchor1" attributeName="stroke-dashoffset" from="0" to="0" begin="indefinite" dur="3s" fill="freeze" keySplines="0 0.5 0.5 1" calcMode="spline" />
+</path>
+<path d="M139.183,246.704
+c3.706,2.321,8.561,2.634,11.948,0.612c3.387-2.023,8.655,1.223,8.655,1.223s16.557,9.031,21.355,12.042
+c4.798,3.01,7.338,5.127,8.279,11.76c0.941,6.632-6.397,3.293-6.397,3.293s-21.12-7.056-24.037-7.808
+c-2.916-0.753-8.091-1.223-8.091-1.223s-1.505,3.293-3.34,3.293c-1.834,0-3.81,0-6.962,0s-3.01-2.164-5.645-4.045
+c-3.01,0-30.481,9.408-34.62,11.289c-4.139,1.882-5.645-3.01-5.645-5.645c0-2.634,3.01-7.15,7.15-9.408l15.758-7.761
+C117.592,254.325,134.15,243.553,139.183,246.704z" fill="#560709">
+<animate id="anchor2" attributeName="stroke-dashoffset" from="0" to="0" begin="indefinite" dur="3s" fill="freeze" keySplines="0 0.5 0.5 1" calcMode="spline" />
+</path>
+</g>
+</svg>
+
+
+  <p>Vector graphics that don't care about your screen resolution.</p>
+</section>
+
+<section class="slide-icons">
+  <div style="width: 40px;">
+  <object>
+    <embed src="img/responsive3.svg" />
+  </object>
+</div>
+
+<div style="width: 80px;">
+  <object>
+    <embed src="img/responsive3.svg" />
+  </object>
+</div>
+
+<div style="width: 120px;">
+  <object>
+    <embed src="img/responsive3.svg" />
+  </object>
+</div>
+
+<div style="width: 160px;">
+  <object>
+    <embed src="img/responsive3.svg" />
+  </object>
+</div>
+
+<div style="width: 190px;">
+  <object>
+    <embed src="img/responsive3.svg" />
+  </object>
+</div>
+
+<div style="width: 210px;">
+  <object>
+    <embed src="img/responsive3.svg" />
+  </object>
+</div>
+
+<div style="width: 250px;">
+  <object>
+    <embed src="img/responsive3.svg" />
+  </object>
+</div>
+
+<div style="width: 301px;">
+  <object>
+    <embed src="img/responsive3.svg" />
+  </object>
+</div>
+
+
+  <p>Truly responsive icons.</p>
+
+  <p class="source"><a href="http://coding.smashingmagazine.com/2014/03/05/rethinking-responsive-svg/">source</a></p>
+</section>
+
+<section>
+  <svg x="0px" y="0px" width="380px" height="380px" viewBox="0 0 380 380" enable-background="new 0 0 380 380">
+<style>
+@-webkit-keyframes march  {
+to {
+stroke-dashoffset: 100%;
+}
+}
+
+@-moz-keyframes march  {
+to {
+stroke-dashoffset: 100%;
+}
+}
+
+@keyframes march  {
+to {
+stroke-dashoffset: 100%;
+}
+}
+
+circle {
+-webkit-animation: march 30s linear infinite;
+-webkit-animation-fill-mode: forwards;
+-moz-animation: march 30s linear infinite;
+-moz-animation-fill-mode: forwards;
+animation: march 30s linear infinite;
+animation-fill-mode: forwards;
+}
+</style>
+
+<g>
+<circle fill="none" stroke="#DEDDDD" stroke-width="2" stroke-miterlimit="10" stroke-dasharray="9.9212,15.864,0.0099,0" cx="190" cy="190" r="156"/>
+</g>
+
+<g id="plane">
+<polygon fill="#fff" points="71.974,88.578 83.535,80.339 96.177,90.913 118.823,50.792 58.853,58.612 75.48,71.332     "/>
+<g>
+<g>
+    <path fill="#F2634B" d="M75.107,73.474c-0.122-0.034-0.238-0.09-0.342-0.17L55.69,58.711c-0.323-0.247-0.464-0.665-0.357-1.057
+        c0.107-0.392,0.44-0.68,0.844-0.73l62.559-7.635c0.481-0.06,0.936,0.237,1.077,0.7c0.142,0.464-0.069,0.963-0.501,1.183
+        L75.828,73.401C75.601,73.516,75.344,73.539,75.107,73.474z M58.853,58.612l16.627,12.72l37.903-19.375L58.853,58.612z"/>
+</g>
+<g>
+    <path fill="#F2634B" d="M96.177,93.51c-0.156-0.043-0.302-0.124-0.423-0.239l-21.07-20.036c-0.235-0.223-0.347-0.547-0.301-0.868
+        c0.047-0.321,0.246-0.599,0.534-0.747l43.484-22.229c0.388-0.199,0.861-0.123,1.168,0.189c0.306,0.311,0.375,0.785,0.171,1.17
+        L97.327,93.014c-0.146,0.277-0.414,0.468-0.723,0.519C96.46,93.556,96.315,93.548,96.177,93.51z M77.085,72.758l19.092,18.155
+        l20.31-38.297L77.085,72.758z"/>
+</g>
+<g>
+    <path fill="#F2634B" d="M69.784,92.753c-0.086-0.024-0.169-0.059-0.248-0.106c-0.385-0.231-0.569-0.691-0.45-1.124l5.323-19.279
+        l1.928,0.532l-4.363,15.802l10.181-9.687l1.379,1.449L70.74,92.513C70.481,92.759,70.116,92.844,69.784,92.753z"/>
+</g>
+</g>
+<animateTransform attributeType="xml" attributeName="transform" dur="8s" type="rotate" rotate="auto" from="0 190 190" to="360 190 190" repeatCount="indefinite" />
+</g>
+</svg>
+
+
+  <p>Animations, either with CSS, JS or SVG's own internal animation specification.</p>
+</section>
+
+<section>
+  <h2>How do I use it?</h2>
+</section>
+
+<section class="compatibility">
+  <h3>Compatibility</h3>
+
+  <table>
+    <tr>
+      <th>IE</th>
+      <th>Firefox</th>
+      <th>Chrome</th>
+      <th>Safari</th>
+      <th>Opera</th>
+      <th>iOS Safari</th>
+      <th>Android</th>
+      <th>IE Mobile</th>
+    </tr>
+    <tr>
+      <td>9+</td>
+      <td>26+</td>
+      <td>31+</td>
+      <td>7+</td>
+      <td>19+</td>
+      <td>3.2+</td>
+      <td>3+</td>
+      <td>10+</td>
+    </tr>
+  </table>
+
+  <p class="source">source: <a href="http://caniuse.com/#feat=svg">can i use</a></p>
+</section>
+
+<section>
+  <h3>The Basics</h3>
+
+  <p>Here's a circle:</p>
+
+  <svg width="120" height="200">
+    <circle fill="red" r="50" cx="60" cy="100" stroke="black" stroke-width="3">
+  </svg>
+
+  <pre><code>&lt;svg width=&quot;100&quot; height=&quot;200&quot;&gt;
+    &lt;circle fill=&quot;red&quot; r=&quot;50&quot; cx=&quot;50&quot; cy=&quot;100&quot; stroke=&quot;black&quot; stroke-width=&quot;3&quot;&gt;
+  &lt;/svg&gt;</code></pre>
+</section>
+
+<section>
+  <p>More shapes:</p>
+
+  <svg width="500" height="200">
+    <circle fill="red" r="50" cx="50" cy="100" />
+    <rect fill="blue" x="125" y="50" width="100" height="100" />
+    <rect fill="green" x="250" y="50" width="100" height="100" rx="15" ry="15" />
+    <polygon fill="purple" points="375,150 425,50 475,150"/>
+  </svg>
+
+  <pre><code>&lt;svg width=&quot;500&quot; height=&quot;200&quot;&gt;
+    &lt;circle fill=&quot;red&quot; r=&quot;50&quot; cx=&quot;50&quot; cy=&quot;100&quot; /&gt;
+    &lt;rect fill=&quot;blue&quot; x=&quot;125&quot; y=&quot;50&quot; width=&quot;100&quot; height=&quot;100&quot; /&gt;
+    &lt;rect fill=&quot;green&quot; x=&quot;250&quot; y=&quot;50&quot; width=&quot;100&quot; height=&quot;100&quot; rx=&quot;15&quot; ry=&quot;15&quot; /&gt;
+    &lt;polygon fill=&quot;purple&quot; points=&quot;375,150 425,50 475,150&quot;/&gt;
+  &lt;/svg&gt;</code></pre>
+</section>
+
+<section>
+  <p>Here's a path:</p>
+
+  <svg width="400" height="400">
+    <path d="M 100 100 L 300 100 L 200 300 z"
+        fill="orange" stroke="black" stroke-width="3" />
+  </svg>
+
+  <pre><code>&lt;svg width=&quot;400&quot; height=&quot;400&quot;&gt;
+    &lt;path d=&quot;M 100 100 L 300 100 L 200 300 z&quot;
+        fill=&quot;orange&quot; stroke=&quot;black&quot; stroke-width=&quot;3&quot; /&gt;
+  &lt;/svg&gt;</code></pre>
+</section>
+
+<section>
+  <h2>Time for <c>real shit</c>.</h2>
+</section>
+
+<section>
+  <h3>Do everything in Illustrator</h3>
+  <p>(use vector Smart Objects in Photoshop)</p>
+  <img src="img/illustrator.png">
+</section>
+
+<section>
+  <h3>Export right to SVG</h3>
+
+  <img src="img/save.png">
+</section>
+
+<section>
+  <div class="half">
+    <p><strong>Profile:</strong> <code>SVG 1.1</code>, or <code>SVG Tiny 1.1</code> if you don't have complex graphics like gradients, animations or embedded images.</p>
+
+    <p><strong>Fonts:</strong> <code>Convert to outline</code> will convert any text to vector outlines.</p>
+  </div>
+
+  <div class="half">
+    <img src="img/save_settings.png">
+  </div>
+</section>
+
+<section class="svg-code" data-transition="fade">
+  <pre>
+<span id="L1" class="LineNr"> 1 </span><span class="Comment">&lt;?</span><span class="Type">xml</span><span class="Type"> </span><span class="Type">version</span>=<span class="String">&quot;1.0&quot;</span><span class="Type"> </span><span class="Type">encoding</span>=<span class="String">&quot;utf-8&quot;</span><span class="Comment">?&gt;</span>
+<span id="L2" class="LineNr"> 2 </span><span class="Comment">&lt;!</span><span class="Comment">-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  --</span><span class="Comment">&gt;</span>
+<span id="L3" class="LineNr"> 3 </span><span class="Function">&lt;!</span><span class="Statement">DOCTYPE</span> svg <span class="Statement">PUBLIC</span> <span class="String">&quot;-//W3C//DTD SVG 1.1//EN&quot;</span> <span class="String">&quot;<a href="http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd</a>&quot;</span><span class="Function">&gt;</span>
+<span id="L4" class="LineNr"> 4 </span><span class="Function">&lt;</span><span class="Function">svg</span><span class="Function"> </span><span class="Type">version</span>=<span class="String">&quot;1.1&quot;</span><span class="Function"> </span><span class="Type">id</span>=<span class="String">&quot;<span>Layer_1</span>&quot;</span><span class="Function"> </span><span class="Type">xmlns</span>=<span class="String">&quot;<a href="http://www.w3.org/2000/svg">http://www.w3.org/2000/svg</a>&quot;</span><span class="Function"> </span><span class="Type">xmlns</span><span class="Comment">:</span><span class="Type">xlink</span>=<span class="String">&quot;http://www.w3.org/1999/xlink&quot;</span><span class="Function"> </span><span class="Type">x</span>=<span class="String">&quot;0px&quot;</span><span class="Function"> </span><span class="Type">y</span>=<span class="String">&quot;0px&quot;</span>
+<span id="L5" class="LineNr"> 5 </span><span class="Function">   </span><span class="Type">viewBox</span>=<span class="String">&quot;0 0 612 792&quot;</span><span class="Function"> </span><span class="Type">enable-background</span>=<span class="String">&quot;new 0 0 612 792&quot;</span><span class="Function"> </span><span class="Type">xml</span><span class="Comment">:</span><span class="Type">space</span>=<span class="String">&quot;preserve&quot;</span><span class="Function">&gt;</span>
+<span id="L6" class="LineNr"> 6 </span><span class="Function">&lt;</span><span class="Function">path</span><span class="Function"> </span><span class="Type">fill</span>=<span class="String">&quot;none&quot;</span><span class="Function"> </span><span class="Type">stroke</span>=<span class="String">&quot;#000000&quot;</span><span class="Function"> </span><span class="Type">stroke-width</span>=<span class="String">&quot;2&quot;</span><span class="Function"> </span><span class="Type">stroke-miterlimit</span>=<span class="String">&quot;10&quot;</span><span class="Function"> </span><span class="Type">d</span>=<span class="String">&quot;M177.044,388.208c0,0-21.826-24.46-23.707-24.46</span>
+<span id="L7" class="LineNr"> 7 </span><span class="String">  s-3.01,0.376-4.516-1.129c-1.505-1.505-12.418-12.042-12.418-12.042s-2.634-6.397-3.387-10.913</span>
+<span id="L8" class="LineNr"> 8 </span><span class="String">  c-0.753-4.516-4.516-12.418-4.516-13.547c0-1.129,4.139-12.794,4.139-12.794s-3.01-12.418-3.01-33.115</span>
+<span id="L9" class="LineNr"> 9 </span><span class="String">  c0-20.697-3.763-17.686,9.408-34.996s33.868-44.028,34.62-49.296c0.753-5.268,50.425-28.223,66.983-28.223</span>
+<span id="L10" class="LineNr">10 </span><span class="String">  s51.178,5.268,53.812,5.268c2.634,0,13.171,6.774,25.965,8.279c13.547,4.892,57.199,41.77,59.08,65.854s8.655,28.976,9.031,31.233</span>
+<span id="L11" class="LineNr">11 </span><span class="String">  c0.376,2.258,10.913,39.136,2.258,53.435c-8.655,14.3-4.139,17.31-7.902,23.707c-3.763,6.397-6.774,13.923-9.408,15.805</span>
+<span id="L12" class="LineNr">12 </span><span class="String">  c-2.634,1.882-4.892,13.547-6.397,15.429s-9.408,6.021-9.408,6.021s1.882-13.171,1.505-15.429s-4.892-27.47-1.129-34.996</span>
+<span id="L13" class="LineNr">13 </span><span class="String">  c-0.376-7.526-0.376-12.794-2.258-19.192c-0.376-9.031-2.258-47.415-2.258-52.683c0-5.268-7.526-28.976-23.331-37.631</span>
+<span id="L14" class="LineNr">14 </span><span class="String">  c-3.01,0.376-7.526,1.129-15.052,0.753c-7.526-0.376-29.728,0.753-38.383,0.753c-8.655,0-23.331,1.129-26.718,2.634</span>
+<span id="L15" class="LineNr">15 </span><span class="String">  c-3.387,1.505-3.01,4.892-10.913,5.268c-7.902,0.376-31.233,2.258-34.244,2.258c-3.01,0-11.289,1.129-15.805,16.181</span>
+<span id="L16" class="LineNr">16 </span><span class="String">  c-4.516,15.052-7.15,30.104-6.021,38.383s0,22.202-4.139,28.599c-4.139,6.397-4.516,22.955-2.258,31.233</span>
+<span id="L17" class="LineNr">17 </span><span class="String">  C178.925,367.135,184.946,378.8,177.044,388.208z&quot;</span><span class="Function">/&gt;</span>
+<span id="L18" class="LineNr">18 </span><span class="Function">&lt;</span><span class="Function">path</span><span class="Function"> </span><span class="Type">fill</span>=<span class="String">&quot;none&quot;</span><span class="Function"> </span><span class="Type">stroke</span>=<span class="String">&quot;#000000&quot;</span><span class="Function"> </span><span class="Type">stroke-width</span>=<span class="String">&quot;2&quot;</span><span class="Function"> </span><span class="Type">stroke-miterlimit</span>=<span class="String">&quot;10&quot;</span><span class="Function"> </span><span class="Type">d</span>=<span class="String">&quot;M262.183,409.704</span>
+<span id="L19" class="LineNr">19 </span><span class="String">  c3.706,2.321,8.561,2.634,11.948,0.611c3.387-2.023,8.655,1.223,8.655,1.223s16.557,9.031,21.355,12.042</span>
+<span id="L20" class="LineNr">20 </span><span class="String">  c4.798,3.01,7.338,5.127,8.279,11.76c0.941,6.632-6.397,3.293-6.397,3.293s-21.12-7.056-24.037-7.808s-8.091-1.223-8.091-1.223</span>
+<span id="L21" class="LineNr">21 </span><span class="String">  s-1.505,3.293-3.34,3.293c-1.835,0-3.81,0-6.962,0c-3.152,0-3.01-2.164-5.645-4.045c-3.01,0-30.481,9.408-34.62,11.289</span>
+<span id="L22" class="LineNr">22 </span><span class="String">  c-4.139,1.882-5.645-3.01-5.645-5.645c0-2.634,3.01-7.15,7.15-9.408l15.758-7.761C240.592,417.325,257.15,406.553,262.183,409.704z&quot;</span>
+<span id="L23" class="LineNr">23 </span><span class="Function">  /&gt;</span>
+<span id="L24" class="LineNr">24 </span><span class="Identifier">&lt;/svg&gt;</span>
+</pre>
+
+</section>
+
+<section class="svg-code" data-transition="none">
+  <pre>
+<span id="L1" class="LineNr"> 1 </span><span class="Comment">&lt;?</span><span class="Type">xml</span><span class="Type"> </span><span class="Type">version</span>=<span class="String">&quot;1.0&quot;</span><span class="Type"> </span><span class="Type">encoding</span>=<span class="String">&quot;utf-8&quot;</span><span class="Comment">?&gt;</span>
+<span id="L2" class="LineNr"> 2 </span><span class="Comment">&lt;!</span><span class="Comment">-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  --</span><span class="Comment">&gt;</span>
+<span id="L3" class="LineNr"> 3 </span><span class="Function">&lt;!</span><span class="Statement">DOCTYPE</span> svg <span class="Statement">PUBLIC</span> <span class="String">&quot;-//W3C//DTD SVG 1.1//EN&quot;</span> <span class="String">&quot;<a href="http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd</a>&quot;</span><span class="Function">&gt;</span>
+<span id="L4" class="LineNr"> 4 </span><span class="Function">&lt;</span><span class="Function">svg</span><span class="Function"> </span><span class="Type">version</span>=<span class="String">&quot;1.1&quot;</span><span class="Function"> </span><span class="Type">id</span>=<span class="String">&quot;<span class="highlight">Layer_1</span>&quot;</span><span class="Function"> </span><span class="Type">xmlns</span>=<span class="String">&quot;<a href="http://www.w3.org/2000/svg">http://www.w3.org/2000/svg</a>&quot;</span><span class="Function"> </span><span class="Type">xmlns</span><span class="Comment">:</span><span class="Type">xlink</span>=<span class="String">&quot;http://www.w3.org/1999/xlink&quot;</span><span class="Function"> </span><span class="Type">x</span>=<span class="String">&quot;0px&quot;</span><span class="Function"> </span><span class="Type">y</span>=<span class="String">&quot;0px&quot;</span>
+<span id="L5" class="LineNr"> 5 </span><span class="Function">   </span><span class="Type">viewBox</span>=<span class="String">&quot;0 0 612 792&quot;</span><span class="Function"> </span><span class="Type">enable-background</span>=<span class="String">&quot;new 0 0 612 792&quot;</span><span class="Function"> </span><span class="Type">xml</span><span class="Comment">:</span><span class="Type">space</span>=<span class="String">&quot;preserve&quot;</span><span class="Function">&gt;</span>
+<span id="L6" class="LineNr"> 6 </span><span class="Function">&lt;</span><span class="Function">path</span><span class="Function"> </span><span class="Type">fill</span>=<span class="String">&quot;none&quot;</span><span class="Function"> </span><span class="Type">stroke</span>=<span class="String">&quot;#000000&quot;</span><span class="Function"> </span><span class="Type">stroke-width</span>=<span class="String">&quot;2&quot;</span><span class="Function"> </span><span class="Type">stroke-miterlimit</span>=<span class="String">&quot;10&quot;</span><span class="Function"> </span><span class="Type">d</span>=<span class="String">&quot;M177.044,388.208c0,0-21.826-24.46-23.707-24.46</span>
+<span id="L7" class="LineNr"> 7 </span><span class="String">  s-3.01,0.376-4.516-1.129c-1.505-1.505-12.418-12.042-12.418-12.042s-2.634-6.397-3.387-10.913</span>
+<span id="L8" class="LineNr"> 8 </span><span class="String">  c-0.753-4.516-4.516-12.418-4.516-13.547c0-1.129,4.139-12.794,4.139-12.794s-3.01-12.418-3.01-33.115</span>
+<span id="L9" class="LineNr"> 9 </span><span class="String">  c0-20.697-3.763-17.686,9.408-34.996s33.868-44.028,34.62-49.296c0.753-5.268,50.425-28.223,66.983-28.223</span>
+<span id="L10" class="LineNr">10 </span><span class="String">  s51.178,5.268,53.812,5.268c2.634,0,13.171,6.774,25.965,8.279c13.547,4.892,57.199,41.77,59.08,65.854s8.655,28.976,9.031,31.233</span>
+<span id="L11" class="LineNr">11 </span><span class="String">  c0.376,2.258,10.913,39.136,2.258,53.435c-8.655,14.3-4.139,17.31-7.902,23.707c-3.763,6.397-6.774,13.923-9.408,15.805</span>
+<span id="L12" class="LineNr">12 </span><span class="String">  c-2.634,1.882-4.892,13.547-6.397,15.429s-9.408,6.021-9.408,6.021s1.882-13.171,1.505-15.429s-4.892-27.47-1.129-34.996</span>
+<span id="L13" class="LineNr">13 </span><span class="String">  c-0.376-7.526-0.376-12.794-2.258-19.192c-0.376-9.031-2.258-47.415-2.258-52.683c0-5.268-7.526-28.976-23.331-37.631</span>
+<span id="L14" class="LineNr">14 </span><span class="String">  c-3.01,0.376-7.526,1.129-15.052,0.753c-7.526-0.376-29.728,0.753-38.383,0.753c-8.655,0-23.331,1.129-26.718,2.634</span>
+<span id="L15" class="LineNr">15 </span><span class="String">  c-3.387,1.505-3.01,4.892-10.913,5.268c-7.902,0.376-31.233,2.258-34.244,2.258c-3.01,0-11.289,1.129-15.805,16.181</span>
+<span id="L16" class="LineNr">16 </span><span class="String">  c-4.516,15.052-7.15,30.104-6.021,38.383s0,22.202-4.139,28.599c-4.139,6.397-4.516,22.955-2.258,31.233</span>
+<span id="L17" class="LineNr">17 </span><span class="String">  C178.925,367.135,184.946,378.8,177.044,388.208z&quot;</span><span class="Function">/&gt;</span>
+<span id="L18" class="LineNr">18 </span><span class="Function">&lt;</span><span class="Function">path</span><span class="Function"> </span><span class="Type">fill</span>=<span class="String">&quot;none&quot;</span><span class="Function"> </span><span class="Type">stroke</span>=<span class="String">&quot;#000000&quot;</span><span class="Function"> </span><span class="Type">stroke-width</span>=<span class="String">&quot;2&quot;</span><span class="Function"> </span><span class="Type">stroke-miterlimit</span>=<span class="String">&quot;10&quot;</span><span class="Function"> </span><span class="Type">d</span>=<span class="String">&quot;M262.183,409.704</span>
+<span id="L19" class="LineNr">19 </span><span class="String">  c3.706,2.321,8.561,2.634,11.948,0.611c3.387-2.023,8.655,1.223,8.655,1.223s16.557,9.031,21.355,12.042</span>
+<span id="L20" class="LineNr">20 </span><span class="String">  c4.798,3.01,7.338,5.127,8.279,11.76c0.941,6.632-6.397,3.293-6.397,3.293s-21.12-7.056-24.037-7.808s-8.091-1.223-8.091-1.223</span>
+<span id="L21" class="LineNr">21 </span><span class="String">  s-1.505,3.293-3.34,3.293c-1.835,0-3.81,0-6.962,0c-3.152,0-3.01-2.164-5.645-4.045c-3.01,0-30.481,9.408-34.62,11.289</span>
+<span id="L22" class="LineNr">22 </span><span class="String">  c-4.139,1.882-5.645-3.01-5.645-5.645c0-2.634,3.01-7.15,7.15-9.408l15.758-7.761C240.592,417.325,257.15,406.553,262.183,409.704z&quot;</span>
+<span id="L23" class="LineNr">23 </span><span class="Function">  /&gt;</span>
+<span id="L24" class="LineNr">24 </span><span class="Identifier">&lt;/svg&gt;</span>
+</pre>
+
+
+  <aside class="notes">
+    <ul>
+      <li>svg id is name of layer from illustrator</li>
+    </ul>
+  </aside>
+</section>
+
+<section>
+  <h3>Getting it into your markup:</h3>
+  <ul>
+    <li><code>&lt;embed&gt;</code></li>
+    <li><code>background</code></li> <li>Inline <code>&lt;svg&gt;</code></li>
+  </ul>
+</section>
+
+<section>
+  <h3> <code>&lt;embed&gt;</code></h3>
+
+  <p>A good way not to clutter your page with svg, but:</p>
+
+  <ul>
+    <li>An additional HTTP request per graphic</li>
+    <li>Not able to style SVG components with CSS</li>
+  </ul>
+</section>
+
+<section>
+  <h3><code>background</code></h3>
+
+  <p>CSS <code>background</code> rules can take SVG markup in a <code>data-uri</code> string:</p>
+
+  <div>
+    <pre><code class="css">background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10'><linearGradient id='gradient'><stop offset='10%' stop-color='#F00'/><stop offset='90%' stop-color='#fcc'/> </linearGradient><rect fill='url(#gradient)' x='0' y='0' width='100%' height='100%'/></svg>")
+</code></pre>
+</div>
+
+<p class="fragment data-uri-background">me has background</p>
+
+<style>
+  .data-uri-background { background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10'><linearGradient id='gradient'><stop offset='10%' stop-color='#F00'/><stop offset='90%' stop-color='#fcc'/> </linearGradient><rect fill='url(#gradient)' x='0' y='0' width='100%' height='100%'/></svg>")
+ }
+</style>
+</section>
+
+<section>
+  <h3><code>background</code></h3>
+
+  <p>Pros:</p>
+  <ul>
+    <li>Really easy to reuse across an application.</li>
+    <li>Great for icons.</li>
+  </ul>
+
+  <div class="fragment">
+  <p>Cons:</p>
+  <ul>
+    <li>Can increase the size of your CSS</li>
+    <li>Not able to style SVG components with CSS</li>
+  </ul>
+</div>
+</section>
+
+<section>
+  <h3>Inline <code>&lt;svg&gt;</code></h3>
+  <p>The elements live on the page with the rest of your page so you can:</p>
+
+  <ul>
+    <li>Style them with CSS</li>
+    <li>Manipulate them with Javascript</li>
+  </ul>
+
+  <aside class="notes">better for illustrations, animations</aside>
+</section>
+
+<section>
+  <h2>Styling with CSS</h2>
+</section>
+
+<section>
+  <svg width="500" height="200">
+    <circle fill="red" r="50" cx="50" cy="100" />
+    <rect fill="blue" x="125" y="50" width="100" height="100" />
+    <rect fill="green" x="250" y="50" width="100" height="100" rx="15" ry="15" />
+    <polygon fill="purple" points="375,150 425,50 475,150"/>
+  </svg>
+</section>
+
+<section>
+  <svg class="css-1" width="500" height="200">
+    <circle fill="red" r="50" cx="50" cy="100" />
+    <rect fill="blue" x="125" y="50" width="100" height="100" />
+    <rect fill="green" x="250" y="50" width="100" height="100" rx="15" ry="15" />
+    <polygon fill="purple" points="375,150 425,50 475,150"/>
+  </svg>
+
+  <pre><code>&lt;svg width=&quot;500&quot; height=&quot;200&quot;&gt;
+  &lt;circle fill=&quot;red&quot; r=&quot;50&quot; cx=&quot;50&quot; cy=&quot;100&quot; /&gt;
+  &lt;rect fill=&quot;blue&quot; x=&quot;125&quot; y=&quot;50&quot; width=&quot;100&quot; height=&quot;100&quot; /&gt;
+  &lt;rect fill=&quot;green&quot; x=&quot;250&quot; y=&quot;50&quot; width=&quot;100&quot; height=&quot;100&quot; rx=&quot;15&quot; ry=&quot;15&quot; /&gt;
+  &lt;polygon fill=&quot;purple&quot; points=&quot;375,150 425,50 475,150&quot;/&gt;
+&lt;/svg&gt;</code></pre>
+
+  <style>
+    .css-1 rect:hover {
+      fill: black;
+    }
+  </style>
+
+  <pre><code>.css-1 rect:hover {
+  fill: black;
+}</code></pre>
+</section>
+
+<section>
+  <h3>Gradients</h3>
+
+  <svg class="css-2" width="400" height="200">
+    <circle fill="red" r="50" cx="50" cy="100" />
+    <polygon points="175,150 225,50 275,150"/>
+
+    <defs>
+      <linearGradient id="Gradient">
+        <stop offset="5%" stop-color="#F60" />
+        <stop offset="95%" stop-color="#FF6" />
+      </linearGradient>
+    </defs>
+  </svg>
+
+  <pre><code>&lt;svg class=&quot;css-2&quot; width=&quot;200&quot; height=&quot;200&quot;&gt;
+  &lt;circle fill=&quot;red&quot; r=&quot;50&quot; cx=&quot;50&quot; cy=&quot;100&quot; /&gt;
+  &lt;polygon points=&quot;375,150 425,50 475,150&quot;/&gt;
+
+  &lt;defs&gt;
+    &lt;linearGradient id=&quot;Gradient&quot;&gt;
+      &lt;stop offset=&quot;5%&quot; stop-color=&quot;#F60&quot; /&gt;
+      &lt;stop offset=&quot;95%&quot; stop-color=&quot;#FF6&quot; /&gt;
+    &lt;/linearGradient&gt;
+  &lt;/defs&gt;
+&lt;/svg&gt;</code></pre>
+
+  <style>
+    .css-2 circle, .css-2 polygon {
+      fill: url(#Gradient);
+    }
+  </style>
+
+  <pre><code>.css-2 rect, .css-2 polygon {
+  fill: url(#Gradient);
+}</code></pre>
+</section>
+
+<section>
+  <h1>THE END</h1>
+  <h3>BY Hakim El Hattab / hakim.se</h3>
+</section>
+
+      </div>
+
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.min.js"></script>
+
+    <script>
+
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'concave', // default/cube/page/concave/zoom/linear/fade/none
+        backgroundTransition: 'slide',
+
+        // Parallax scrolling
+        // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+        // parallaxBackgroundSize: '2100px 900px',
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+      });
+
+    </script>
+
+    
+    <script src="http://localhost:35729/livereload.js?snipver=1"></script>
+    
+
+  </body>
+</html>
