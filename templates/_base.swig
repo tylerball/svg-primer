@@ -76,9 +76,15 @@
         ]
       });
 
-      Reveal.addEventListener( 'in-view', function() {
-        document.getElementById('anchor1').beginElement()
-        document.getElementById('anchor2').beginElement()
+      Reveal.addEventListener( 'js-in-view', function() {
+        var slide = document.querySelector('section.js');
+
+        var listener = function () {
+          document.getElementById('anchor1').beginElement();
+          document.getElementById('anchor2').beginElement();
+        };
+
+        slide.addEventListener('webkitTransitionEnd', listener, false);
       });
     </script>
 

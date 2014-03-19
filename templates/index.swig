@@ -28,7 +28,7 @@
 </section>
 
 <section>
-  {% include "_svg/anchorman.swig" %}
+  {% include "_svg/anchorman.swig" with {animation: false} %}
 
   <p>Vector graphics that don't care about your screen resolution.</p>
 </section>
@@ -346,54 +346,56 @@
 }</code></pre>
 </section>
 
-<section class="js" data-state="in-view">
+<section data-state="js-in-view" class="js">
   <h3>Animating with Javascript</h3>
 
-  {% include "_svg/anchorman.swig" %}
-
-  <script src="js/jquery.min.js"></script>
-  <script>
-    var $anchorman = $('.js .anchorman');
-    var $paths = $anchorman.find('path');
-
-    $paths.each( function(i, o) {
-      var $path = $(o);
-      length = this.getTotalLength().toString()
-
-      $path
-        .attr('stroke-dasharray', length + ' ' + length)
-        .attr('stroke-dashoffset', length)
-
-      $(document.getElementById('anchor' + (i + 1)) )
-        .attr('from', length)
-        .attr('values', length + ';0')
-    });
-  </script>
+  <div class="anchorman">
+    {% include "_svg/anchorman.swig" with {animation: true} %}
+  </div>
 </section>
+
+<script>
+  document.onreadystatechange = function () {
+    var d = document;
+
+    if (d.readyState == 'complete') {
+      var paths = d.querySelectorAll('.anchorman path');
+
+      for (var i = 0; i < paths.length; i++) {
+        var path = paths[i];
+        var length = path.getTotalLength().toString()
+
+        path.setAttributeNS(null, 'stroke-dasharray', length + ' ' + length);
+        path.setAttributeNS(null, 'stroke-dashoffset', length);
+
+        var anchor = document.getElementById('anchor' + (i + 1))
+        anchor.setAttributeNS(null, 'from', length);
+        anchor.setAttributeNS(null, 'values', length + ';0');
+      }
+    }
+  }
+</script>
 
 <section>
 
-  <pre><code>
-  var $anchorman = $('.js .anchorman');
-  var $paths = $anchorman.find('path');
+  <pre><code class="javascript">var paths = d.querySelectorAll('.anchorman path');
 
-  $paths.each( function(i, o) {
-    var $path = $(o);
-    length = this.getTotalLength().toString()
+for (var i = 0; i &lt; paths.length; i++) {
+  var path = paths[i];
+  var length = path.getTotalLength().toString()
 
-    $path
-      .attr('stroke-dasharray', length + ' ' + length)
-      .attr('stroke-dashoffset', length)
+  path.setAttributeNS(null, 'stroke-dasharray', length + ' ' + length);
+  path.setAttributeNS(null, 'stroke-dashoffset', length);
 
-    $(document.getElementById('anchor' + (i + 1)) )
-      .attr('from', length)
-      .attr('values', length + ';0')
-  });
+  var anchor = document.getElementById('anchor' + (i + 1))
+  anchor.setAttributeNS(null, 'from', length);
+  anchor.setAttributeNS(null, 'values', length + ';0');
+}
 
-  var animate = function() {
-    document.getElementById('anchor1').beginElement()
-    document.getElementById('anchor2').beginElement()
-  };</code></pre>
+var animate = function() {
+  document.getElementById('anchor1').beginElement()
+  document.getElementById('anchor2').beginElement()
+};</code></pre>
 </section>
 
 <section>
