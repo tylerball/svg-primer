@@ -182,6 +182,10 @@ a:hover img {
   font-size: 0.8em;
 }
 
+.reveal pre code {
+  max-height: none;
+}
+
 b {
   color: #914613;
 }
@@ -366,6 +370,6 @@ p code {
 
 .anchorman g {
   fill: none;
-  stroke: #7ad185;
+  stroke: #560709;
   stroke-width: 2px;
 }

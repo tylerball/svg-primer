@@ -62,6 +62,10 @@ $selectionBackgroundColor: transparentize($linkColor, 0.3);
   th {
     font-size: 0.8em;
   }
+
+  pre code {
+    max-height: none;
+  }
 }
 
 b {
@@ -214,12 +218,14 @@ p {
   }
 }
 
-.anchorman path {
-  fill: none;
-}
+.anchorman {
+  path {
+    fill: none;
+  }
 
-.anchorman g {
-  fill: none;
-  stroke: #7ad185;
-  stroke-width: 2px;
+  g {
+    fill: none;
+    stroke: $orange-dark;
+    stroke-width: 2px;
+  }
 }
